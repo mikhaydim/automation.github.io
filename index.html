@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Услуги автоматизации, программирование ПЛК и SCADA-систем, сборка и модернизация шкафов РСУ и ПАЗ">
+    <title>Профессиональные услуги автоматизации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('fon.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 86, 179, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        h2 {
+            color: #0056b3;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .service-item {
+            width: 48%;
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 0.95em; /* Уменьшенный шрифт для лучшего выравнивания */
+        }
+        .service-images {
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end; /* Выравнивание изображений по правой стороне */
+        }
+        .service-images img {
+            width: 140px;
+            height: 140px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: rgba(0, 86, 179, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        @media (max-width: 768px) {
+            .service-item, .service-images {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Автоматизация и SCADA-системы</h1>
+</header>
+
+<section>
+    <h2>О нас</h2>
+    <p>   Свыше 10 лет успешного опыта в области промышленной автоматизации. Мы профессионально занимаемся программированием ПЛК таких ведущих брендов, как Siemens, GE, Emerson и Honeywell. Наши услуги включают разработку и настройку SCADA-систем для эффективного контроля и управления технологическими процессами, а также комплексную сборку и модернизацию шкафов РСУ и ПАЗ. Гарантируем высокое качество и индивидуальный подход к каждому проекту.</p>
+</section>
+
+<section>
+    <h2>Наши услуги</h2>
+    <div class="services">
+        <div class="service-item">
+            <h3>Программирование ПЛК</h3>
+            <p>Мы предлагаем полный цикл разработки и настройки программного обеспечения для ПЛК любых производителей, включая Siemens, GE, Emerson и Honeywell. Наша команда создаёт комплексные алгоритмы управления с нуля, которые учитывают все индивидуальные требования вашего проекта. Также мы занимаемся модернизацией уже существующих систем автоматизации, интегрируя новое оборудование в текущие процессы для повышения эффективности и надежности. Каждое решение адаптируется под конкретные задачи, что обеспечивает максимальную производительность и гибкость систем управления.</p>
+            <h3>SCADA-системы</h3>
+            <p>Мы предлагаем профессиональное проектирование, внедрение и полную поддержку SCADA-систем для автоматизации технологических процессов. В рамках каждого проекта разрабатываются детализированные мнемосхемы, обеспечивающие наглядность и удобство управления процессами. Мы используем современные дизайнерские решения, строго соответствующие мировым стандартам и учитывающие все пожелания заказчика. Наш подход гарантирует не только функциональность и безопасность системы, но и удобство в эксплуатации, что способствует оптимизации работы предприятий.</p>
+            <h3>Сборка шкафов и щитов</h3>
+            <p>Комплексная сборка и модернизация шкафов РСУ и ПАЗ с гарантией высокого качества исполнения.</p>
+            <h3>Пусконаладочные работы</h3>
+            <p>Пусконаладочные работы с последующим обучением персонала, чтобы обеспечить максимальную эффективность работы систем.</p>
+        </div>
+
+        <div class="service-images">
+            <img src="image1.jpg" alt="Image 1" onclick="openModal(0)">
+            <img src="image2.jpg" alt="Image 2" onclick="openModal(1)">
+            <img src="image3.jpg" alt="Image 3" onclick="openModal(2)">
+            <img src="image4.jpg" alt="Image 4" onclick="openModal(3)">
+            <img src="image5.jpg" alt="Image 5" onclick="openModal(4)">
+            <img src="image6.jpg" alt="Image 6" onclick="openModal(5)">
+            <img src="image7.jpg" alt="Image 7" onclick="openModal(6)">
+            <img src="image8.jpg" alt="Image 8" onclick="openModal(7)">
+            <img src="image9.jpg" alt="Image 9" onclick="openModal(8)">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами для получения консультации или обсуждения проекта:</p>
+    <p>Email: <a href="mailto:mikhaidim@gmail.com">mikhaidim@gmail.com</a></p>
+    <p>Телефон: +7 (909) 607-28-94; +7 (777) 156-55-35</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Услуги автоматизации. Все права защищены.</p>
+</footer>
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.service-images img');
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImage");
+
+    // Открыть изображение в модальном окне
+    function openModal(index) {
+        currentIndex = index;
+        modal.style.display = "block";
+        modalImg.src = images[currentIndex].src;
+    }
+
+    // Закрыть модальное окно
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Листать изображения
+    function changeSlide(step) {
+        currentIndex = (currentIndex + step + images.length) % images.length;
+        modalImg.src = images[currentIndex].src;
+    }
+</script>
+
+</body>
+</html>
